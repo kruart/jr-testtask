@@ -1,0 +1,78 @@
+body{
+    background-color:white;
+    background: linear-gradient(to top, #fefcea, black);
+}
+td, th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 7px;
+}
+
+th {
+    color: black;
+    background-color: black;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#ebf3fc));
+    background-image: -webkit-linear-gradient(top, black, #ebf3fc);
+    background-image:    -moz-linear-gradient(top, black, #ebf3fc);
+    background-image:     -ms-linear-gradient(top, black, #ebf3fc);
+    background-image:      -o-linear-gradient(top, black, #ebf3fc);
+    background-image:         linear-gradient(top, black, #ebf3fc);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    border: 0;
+}
+.ccc{
+    border: 2px solid #e34761; /* Параметры рамки */
+    background: #f3dbdf; /* Цвет фона */
+    padding: 2px 0px 2px 0px; /* Поля вокруг текста */
+}
+.aaa{
+    color: black;
+    background: white;
+}
+.fff{
+    color: white;
+    background: black;
+    text-shadow: 1px 3px 3px rgba(135, 206, 235, 1);
+    padding: 0;
+    border: 0;
+}
+.bbb {
+    font-size: 50px;
+    font-weight: normal;
+    cursor: pointer;
+    color: transparent;
+    animation: shadows 7s infinite ease-in;
+    text-shadow: 0 0 20px transparent,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 40px darkred,
+    0 0 70px darkred,
+    0 0 80px darkred,
+    0 0 100px darkred,
+    0 0 150px darkred;
+}
+
+:link, :visited{
+    color: darkblue;
+}
+
+.activeA {
+    color: #f00; /* Цвет активной ссылки */
+}
+
+@keyframes shadows {
+    10% {
+        text-shadow: 0 0px 1px hsl(0, 80%, 30%);
+    }
+    60% {
+        text-shadow: 0 0px 1px black;
+    }
+    90% {
+        text-shadow: 0 30px 40px transparent;
+    }
+}
